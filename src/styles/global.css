@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "../styles/boska.css";
+
+html{
+    font-family: 'Boska-Variable';
+}
