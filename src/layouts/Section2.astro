@@ -1,0 +1,65 @@
+---
+//Text section
+import Text from '../components/Text.astro';
+---
+
+<section id="section2" class="w-screen h-auto bg-amber-50 py-10">
+    <div class="sec-2 w-auto h-auto flex justify-center">
+        <h1 class="text-black">We Ensure</h1>
+    </div>
+    
+    <div class="w-5/6 h-auto mx-auto flex flex-row justify-between">
+        <Text >
+            <p slot="first" id="section-title">Fresh Set PowderBrow</p>
+            <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+            <p slot="third" id="section-price">$500 | 135 min</p>
+        </Text>
+        <Text>
+            <p slot="first" id="section-title">Microblading & Shading</p>
+            <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+            <p slot="third" id="section-price">$550 | 150 min</p>
+        </Text>
+        <Text>
+            <p slot="first" id="section-title">Microblading</p>
+            <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+            <p slot="third" id="section-price">$500 | 135 min</p>
+        </Text>
+    </div>
+</section>
+
+<style>
+
+
+	#section2{
+		clip-path: ellipse(99% 100% at bottom);
+		z-index: 10;
+		margin-top: -150px; 
+	}
+
+	.sec-2 h1{
+		font-family: 'Boska-Variable';
+		font-weight: 500;
+		font-size: 40px;
+	}
+
+	#section-title{
+		color: black;
+		font-weight: 500;
+		font-size: 18px;
+        margin-bottom: 3%;
+	}
+
+	#section-desc{
+		color: black;
+		font-weight: 400;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	#section-price{
+		color: black;
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+</style>

@@ -1,0 +1,53 @@
+---
+//Hero section for landing page
+---
+
+<section class="hero-content w-screen h-screen bg-black relative">
+    <div class="bg-black opacity-70 w-screen h-screen absolute"></div>
+
+    <div class="relative flex w-screen h-screen justify-center items-center z-10">
+        <div class="w-1/2 h-auto flex flex-col items-center">
+            <h1 class="hero-text text-center">Fall in love with <i>your eyebrows</i> again.</h1>
+            <p class="text-center">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+            <button class="hero-btn btn rounded-full bg-green-900 px-10 py-1 border-white border-2 my-10 hover:scale-[106%] transition ease-in-out">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-text{
+		font-family: 'Boska-Variable';
+		font-weight: 700;
+		font-size: 80px;
+		color: white;
+	}
+
+	.hero-text i{
+		font-family: 'Boska-VariableItalic';
+		font-weight: 700;
+		font-size: 80px;
+        color: white;
+	}
+
+    .hero-content{
+        background-image: url("../shopImage.jpeg"); /* The image used *//* Used if the image is unavailable */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;  
+    }
+
+
+	.hero-content p{
+		font-family: 'Boska-Variable';
+		font-weight: 400;
+		font-size: 25px;
+		color: white;
+	}
+
+	.hero-btn{
+		font-family: 'Boska-Variable';
+		font-weight: 400;
+		font-size: 25px;
+		color: white;
+	}
+</style>
