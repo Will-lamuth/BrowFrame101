@@ -1,0 +1,43 @@
+.wrapper{
+    width: auto;
+    height: auto;
+}
+
+.item{
+    margin-bottom: 2vh;
+    padding: 1vh 1vw;
+}
+
+.service-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service-descript{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+span{
+    font-size: 30px;
+}
+
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(0,1,0,1);
+}
+
+.content.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all .3s cubic-bezier(0,1,0,1);
+}
