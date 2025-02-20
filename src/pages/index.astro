@@ -2,77 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Section1 from '../layouts/Section1.astro';
 import Section2 from '../layouts/Section2.astro';
+import Section4 from '../layouts/Section4.astro';
 import Section3 from '../layouts/Section3.astro';
 import Section5 from '../layouts/Section5.astro';
 import Section6 from '../layouts/Section6.astro';
-import Accordion from '../components/accordion.jsx';
+import Section7 from '../layouts/Section7.astro';
 ---
 
 <Layout>
 	<Section1/>
 	<Section2/>
-
-	<section id="testimony" class="w-screen h-[55vh] bg-[#476D4D] py-15">
-		<div class="sec-3 w-5/6 h-auto mx-auto flex flex-row gap-10">
-			<div class="w-1/4 h-auto ">
-				<h1 id="test-header" class="text-amber-50">Heres what our clients say</h1>
-				<p id="test-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit.</p>
-			</div>
-			<div class="w-3/4 h-auto">
-
-			</div>
-		</div>
-	</section>
-
 	<Section3/>
-
-
-	<section id="services" class="w-screen h-[70vh]">
-
-		<div class="w-5/6 h-5/6 flex flex-row gap-20 items-start justify-between mx-auto">
-			<div class="w-1/2 h-5/6 bg-[#476D4D] p-10">
-				<h1 id="service-header">Custom Solutions for your Brows.</h1>
-				<p id="service-text">Choose the service that best fits you.</p>
-			</div>
-			<div class="w-1/2 h-full">
-				<Accordion client:load />
-			</div>
-		</div>
-	</section>
-
-
+	<Section4/>
 	<Section5/>
 	<Section6/>
-	
-
-
+	<Section7/>
 </Layout>
 
-<style>
-	#test-header{
-		font-size: 40px;
-		font-weight: 500;
-		margin-bottom: 5%;
-	}
-
-	#test-text{
-		font-size: 18px;
-		font-weight: 400;
-		color:white;
-	}
-
-	#service-header{
-		color: white;
-		font-size: 40px;
-		font-weight: 600;
-		margin-bottom: 10%;
-	}
-
-	#service-text{
-		color: white;
-		font-size: 25px;
-		font-weight: 400;
-		font-family: 'Boska-VariableItalic';
-	}
-
-</style>

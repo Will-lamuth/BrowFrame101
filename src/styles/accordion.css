@@ -26,18 +26,18 @@
     cursor: pointer;
 }
 
-span{
+.service-direction{
     font-size: 30px;
 }
 
 .content{
     max-height: 0;
     overflow: hidden;
-    transition: all .3s cubic-bezier(0,1,0,1);
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 .content.show{
     height: auto;
-    max-height: 9999px;
-    transition: all .3s cubic-bezier(0,1,0,1);
+    max-height: 500px;
+
 }

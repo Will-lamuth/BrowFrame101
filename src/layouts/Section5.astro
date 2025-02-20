@@ -1,93 +1,31 @@
 ---
-//contact form
+import Accordion from '../components/accordion.jsx';
 ---
 
-<section id="contact" class="w-screen h-150 flex justify-center items-center relative">
-    <div id="contact-background" class="w-full h-full bg-[#E8CC84]"></div>
-
-    <div class="absolute w-5/6 h-5/6 z-10 flex flex-row justify-between items-center gap-10 p-10">
-        <div class="w-1/3 h-full">
-            <h1 id="contact-header">Book a Service.</h1>
-            <br>
-            <p id="contact-text">The best way to book a service is to call or text me at:</p>
-            <br>
-            <p id="contact-text"><b>(443) 521-6191 or (443) 225 5675</b></p>
-            <br>
-            <p id="contact-text"><b>thydalamuth@gmail.com</b></p>
-            <br>
-            <p id="contact-text"><b>12 washington street, Cambridge MD 21613</b></p>
-
-            <button class="w-45 h-12 btn rounded-full bg-green-900 border-white border-2 my-10 hover:scale-[106%] transition ease-in-out text-white shadow-lg text-[1.3rem] font-medium">Submit</button>
+<section id="services" class="w-screen h-[70vh] bg-[#fffbeb] relative">
+    <div class="w-5/6 h-5/6 flex flex-col md:flex-row gap-20 items-start justify-between mx-auto">
+        <div class="w-1/2 h-5/6 bg-[#476D4D] p-10 sm:w-full">
+            <h1 id="service-header">Custom Solutions for your Brows.</h1>
+            <p id="service-text">Choose the service that best fits you.</p>
         </div>
-        <div class="w-1/2 h-full flex justify-center items-center">
-            <div class="w-3/4 h-150 flex justify-center">
-                <div id="contactForm" class="bg-white w-full h-11/12 p-[3%]">
-                    <div class="w-full h-full flex flex-col">
-                        <div class="w-full h-1/8 flex items-center">
-                            <h1 id="form-header" class="text-green-900">Get in Touch.</h1>
-                        </div>
-                        <div class="w-full h-1/6 flex items-center">
-                            <label class="w-full h-[40px]">Full Name (Required)<input type="text" name="name" id="form-input" class="h-full w-full"></label>
-                        </div>
-                        <div class="w-full h-1/6 flex items-center">
-                            <label class="w-full h-[40px]">Email (Required)<input type="text" name="email" id="form-input" class="h-full w-full"></label>	
-                        </div>
-                        <div class="w-full h-2/6 flex items-center">
-                            <label class="w-full h-[150px]">Message (Required)<textarea name="message" id="form-input" class="h-full w-full"></textarea></label>
-                        </div>
-                        <div class="w-full h-1/6 flex items-center">
-                            <label class="w-full h-[40px]">Phone (Required)<input type="text" name="phonenumber" id="form-input" class="h-full w-full"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="w-1/2 h-fit sm:w-full">
+            <Accordion client:visible />
         </div>
     </div>
 </section>
 
 <style>
-    #contact-background{
-		clip-path: ellipse(100% 100% at 20% 100%);
-	}
-
-	#contact-header{
-		font-size: 50px;
-		font-weight: 600;
+    #service-header{
 		color: white;
-        font-family: 'Boska-VariableItalic';
-	}
-
-	#contactForm{
-		box-shadow: 5px -5px 20px #5f54372f;
-		border-radius: 10px;
-	}
-
-	#contact-text{
-		font-size: 18px;
-	}
-
-	#form-input{
-		background-color: #EEEEEE;
-		border-color: #BBBBBB;
-		border-width: 1px;
-		border-radius: 5px;
-		font-size: 18px;
-	}
-
-	textarea{
-		resize: none;
-		font-size: 18px;
-	}
-
-	label{
-		font-size: 14px;
-        color: rgba(0, 0, 0, 0.695);
-	}
-
-	#form-header{
+		font-size: 2.5rem;
 		font-weight: 600;
-		font-size: 40px;
-		padding: 0;
-        font-family: 'Boska-VariableItalic';
+		margin-bottom: 10%;
+	}
+
+	#service-text{
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 400;
+		font-family: 'Boska-VariableItalic';
 	}
 </style>

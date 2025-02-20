@@ -1,0 +1,78 @@
+<section id="About" class="w-screen h-screen flex items-center justify-center bg-[#fffbeb] relative">
+    <div class="sec-4 w-5/6 h-5/6 relative">
+        <div class="w-full h-full flex justify-end absolute">
+            <div class="h-10/12 w-11/12 flex justify-start items-start gap-[15%] p-25" id="about-content">
+
+                <div class="w-1/4 h-3/3 bg-amber-900 z-10" id="about-img2"></div>
+
+                <div class="w-1/2 flex flex-col justify-center">
+                    <h1 class="text-white text-center" id="about-header">Hi, Im <span class="text-[#273c2a]">Thyda</span></h1>
+                    <p id="about-text">
+                        Lorem Lorem ipsum dolor sit amet, consectetur.
+                        Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem Lorem ipsum dolor sit amet, consectetur adipiscing.
+                    </p>
+                    <br>
+                    <p id="about-text">
+                        Lorem Lorem ipsum dolor sit amet, consectetur.
+                        Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem Lorem ipsum dolor sit amet, consectetur adipiscing.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-1/4 h-5/6 bg-[#AB9C74] absolute top-10 z-9 opacity-50"></div>
+        <div class="w-1/4 h-5/6 bg-gray-100 absolute top-10" id="about-img">
+        
+        </div>
+
+    </div>
+</section>
+
+<style>
+    #about{
+        z-index: 10;
+    }
+
+    #about-header{
+        font-family: 'Boska-Variable';
+		font-size: 50px;
+		font-weight: 600;
+		margin: 0;
+	}
+
+    #about-header > span{
+        font-family: 'Boska-VariableItalic';
+    }
+
+	#about-content{
+		background-color: #E8CC84; 
+	}
+
+	#about-text{
+		font-size:18px;
+		font-weight: 400;
+	}
+
+	#about-img{
+		background-image: url("../aboutImg_1.jpeg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+	}
+
+	#about-img2{
+		border-radius: 150px 150px 0 0;
+		border-width: 8px;
+		border-color: #E8CC84; 
+
+		background-image: url("../thyda.jpeg");
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+	}
+</style>
