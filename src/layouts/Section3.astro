@@ -1,11 +1,19 @@
-<section id="testimony" class="w-screen h-[55vh] bg-[#476D4D] py-15 relative">
-    <div class="sec-3 w-5/6 h-auto mx-auto flex flex-row gap-10">
-        <div class="w-1/4 h-auto ">
-            <h1 id="test-header" class="text-amber-50">Heres what our clients say</h1>
-            <p id="test-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit.</p>
-        </div>
-        <div class="w-3/4 h-auto">
+---
+import Slideshow from "../components/slideshow.jsx";
+---
 
+<section id="testimony" class="w-screen h-[55vh] bg-[#476D4D] relative">
+    <div class="sec-3 w-full h-full mx-auto flex flex-row gap-10">
+        <div class="hidden w-2/5 h-auto md:flex flex-col justify-center items-end bg-[#E8CC84]">
+            <div class="w-[70%] h-full flex flex-col justify-center">
+                <h1 id="test-header">Heres what our clients say</h1>
+                <p id="test-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="w-full h-full">
+            <div class="w-[90%] h-full flex flex-col justify-center">
+                <Slideshow client:visible/>
+            </div>
         </div>
     </div>
 </section>
@@ -15,11 +23,11 @@
 		font-size: 40px;
 		font-weight: 500;
 		margin-bottom: 5%;
+        color: white
 	}
 
 	#test-text{
 		font-size: 18px;
 		font-weight: 400;
-		color:white;
 	}
 </style>

@@ -1,12 +1,11 @@
 <section id="About" class="w-screen h-screen flex items-center justify-center bg-[#fffbeb] relative">
     <div class="sec-4 w-5/6 h-5/6 relative">
         <div class="w-full h-full flex justify-end absolute">
-            <div class="h-10/12 w-11/12 flex justify-start items-start gap-[15%] p-25" id="about-content">
+            <div class="h-10/12 w-11/12 flex flex-col justify-start items-center md:flex-row gap-[20%] sm:flex-col-reverse" id="about-content">
 
-                <div class="w-1/4 h-3/3 bg-amber-900 z-10" id="about-img2"></div>
-
-                <div class="w-1/2 flex flex-col justify-center">
-                    <h1 class="text-white text-center" id="about-header">Hi, Im <span class="text-[#273c2a]">Thyda</span></h1>
+                <div class="sm:w-full md:w-1/3 flex flex-col justify-center">
+                    <h1 class="text-left text-[#273c2a]" id="about-header">Hi, Im</h1>
+                    <h1 class="text-[#273c2a] mt-[-3rem]" id="thyda">Thyda</h1>
                     <p id="about-text">
                         Lorem Lorem ipsum dolor sit amet, consectetur.
                         Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -21,12 +20,18 @@
                         Lorem Lorem ipsum dolor sit amet, consectetur adipiscing.
                     </p>
                 </div>
+
+                <div class="hidden sm:hidden md:block w-full md:w-1/4 h-3/4 sm:w-1/2 z-10" id="about-img2"></div>
+
+                
             </div>
+
+            <div class="hidden sm:hidden md:block w-1/3 h-5/6 bg-[#AB9C74] absolute z-9 opacity-50"></div>
+            <div class="hidden sm:hidden md:block w-1/3 h-5/6 bg-gray-100 absolute" id="about-img"></div>
 
         </div>
 
-        <div class="w-1/4 h-5/6 bg-[#AB9C74] absolute top-10 z-9 opacity-50"></div>
-        <div class="w-1/4 h-5/6 bg-gray-100 absolute top-10" id="about-img">
+
         
         </div>
 
@@ -50,8 +55,13 @@
     }
 
 	#about-content{
-		background-color: #E8CC84; 
+		/*background-color: #E8CC84; */
 	}
+
+    #thyda{
+        font-weight: 800;
+        font-size: 8.5rem;
+    }
 
 	#about-text{
 		font-size:18px;
@@ -67,9 +77,8 @@
 
 	#about-img2{
 		border-radius: 150px 150px 0 0;
-		border-width: 8px;
+		border-width: 12px;
 		border-color: #E8CC84; 
-
 		background-image: url("../thyda.jpeg");
         background-position: center; 
         background-repeat: no-repeat; 

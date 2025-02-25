@@ -2,13 +2,13 @@
 import Accordion from '../components/accordion.jsx';
 ---
 
-<section id="services" class="w-screen h-[70vh] bg-[#fffbeb] relative">
-    <div class="w-5/6 h-5/6 flex flex-col md:flex-row gap-20 items-start justify-between mx-auto">
-        <div class="w-1/2 h-5/6 bg-[#476D4D] p-10 sm:w-full">
+<section id="services" class="w-screen h-auto md:h-[70vh] bg-[#fffbeb] relative">
+    <div class="w-5/6 h-5/6 flex flex-col md:flex-row items-start justify-between mx-auto md:gap-20">
+        <div class="w-full h-5/6 bg-[#476D4D] p-10 md:w-1/2 sm:w-full">
             <h1 id="service-header">Custom Solutions for your Brows.</h1>
             <p id="service-text">Choose the service that best fits you.</p>
         </div>
-        <div class="w-1/2 h-fit sm:w-full">
+        <div class="w-full h-fit sm:w-full md:w-1/2">
             <Accordion client:visible />
         </div>
     </div>
