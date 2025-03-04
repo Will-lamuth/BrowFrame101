@@ -2,7 +2,6 @@ import { useState } from "react";
 import "../styles/global.css";
 
 export function Slideshow(){
-    console.log("slideshow is rendering");
 
     const [index, setIndex] = useState(0);
     const nextReview = () => {

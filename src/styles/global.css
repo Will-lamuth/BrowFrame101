@@ -5,6 +5,8 @@ html{
     font-family: 'Boska-Variable'; 
     scroll-behavior: smooth;
     box-sizing: border-box;
+    transition: ease-in-out;
+    overflow-x: hidden;
 }
 
 body{
@@ -19,15 +21,4 @@ body{
 }
 
 
-
-
-
-
-.prev-btn::before, .nxt-btn::before{
-    position: absolute;
-    width: 56px;
-    height: 24px;
-    background: url("data:image/svg+xml,%3Csvg width='56' height='24' viewBox='0 0 56 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M39.5 23.3828L56 11.6914L39.5 0V9.19141H0V14.1914H39.5V23.3828Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center/contain;
-    transform: translateY(-50%);
-}
 

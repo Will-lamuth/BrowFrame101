@@ -2,13 +2,12 @@
 // Hero section for landing page
 ---
 
-<section class="hero-content w-screen h-screen bg-black sticky top-15">
+<section class="hero-content w-screen h-screen bg-black md:sticky top-15">
     <div class="bg-black opacity-50 w-screen h-screen absolute"></div>
 
     <div class="relative flex w-screen h-screen justify-center items-center">
         <div class="w-3/4 h-auto flex flex-col items-center">
-            <h1 class="hero-text text-center">Fall in love with</h1>
-            <h1 class="hero-text"><i>your brows</i></h1>
+            <h1 class="hero-text text-center">Fall in love with <i>your brows</i></h1>
             <p class="text-center">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
             <button class="hero-btn btn rounded-full bg-green-900 px-10 py-1 border-white border-2 my-10 hover:scale-[106%] transition ease-in-out">Learn More</button>
         </div>
@@ -21,6 +20,7 @@
 		font-weight: 700;
 		font-size: 6rem;
 		color: white;
+        line-height: 120%;
 	}
 
 	.hero-text i{
@@ -51,4 +51,13 @@
 		font-size: 25px;
 		color: white;
 	}
+    @media(max-width: 650px){
+        .hero-text{
+            font-size: 5rem;
+            line-height: 100%;
+        }
+        .hero-text i{
+            font-size: 5rem;
+        }
+    }
 </style>
