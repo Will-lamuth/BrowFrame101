@@ -2,7 +2,7 @@
 //contact form
 ---
 
-<section id="contact" class="w-screen h-[700px] md:h-[600px] flex justify-center items-center relative bg-[#fffbeb]">
+<section id="contact" class="w-screen h-[700px] md:h-[600px] flex justify-center items-center relative bg-transparent">
     <div id="contact-background" class="w-full h-full bg-[#E8CC84]"></div>
     <div class="absolute w-5/6 h-5/6 z-10 flex flex-row justify-between items-center gap-10 sm:p-0 md:p-10">
         <div class="hidden md:block w-1/2 h-full">
@@ -86,4 +86,10 @@
 		padding: 0;
         font-family: 'Boska-VariableItalic';
 	}
+
+    @media(max-width: 650px){
+        #contact-background{
+		clip-path: ellipse(140% 100% at 20% 100%);
+	}
+    }
 </style>
