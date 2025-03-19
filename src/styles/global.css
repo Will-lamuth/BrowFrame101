@@ -10,13 +10,73 @@ html{
 }
 
 body{
-    opacity: 0;
+    opacity: 1;
     animation: fadeIn 1s forwards;
     overflow-x: hidden;
 }
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+
+.grid{
+    display: grid;
+    place-self: center;
+    width: auto;
+    height: 100%;
+    grid-template-columns:200px 200px 200px 200px; 
+    grid-template-rows: 200px 200px;
+    gap: 1rem;
+    grid-template-areas: 
+    "box1 box1 box2 box3"
+    "box1 box1 box4 box5";
+    padding: 0.5rem;
+}
+
+.flipped{
+    grid-template-areas: 
+    "box2 box3 box1 box1"
+    "box4 box5 box1 box1";
+}
+
+.image-box{
+    transition: .2s ease-in-out;
+    border-radius: 2%;
+    background-color: rgba(128, 128, 128, 0.221);
+    animation: load 1.3s ease-in-out alternate-reverse infinite;
+}
+
+.video{
+    animation: load 1.3s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes load {
+    from{
+        background-color: rgb(225, 225, 225);
+    }
+    to{
+        background-color: rgb(172, 172, 172)
+    }
+    
+}
+
+.image-box:hover{
+    transform: scale(103%);
+}
+
+.pictures{
+    clip-path: ellipse(200% 100% at bottom);
+}
+
+@media(max-width: 650px){
+    .grid{
+    grid-template-columns:90px 90px 90px 90px; 
+    grid-template-rows: 90px 90px;
+    }
+
+    .pictures{
+        clip-path: ellipse(160% 100% at bottom);
     }
 }
 

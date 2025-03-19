@@ -1,49 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Section6 from "../layouts/Section6.astro";
+import BentoGallery from "../components/bento.jsx";
 ---
 
 <Layout>
     <section class="w-screen h-[100vh] flex flex-col justify-evenly items-center bg-[#476D4D]">
-
-        <div class="bg-gray-900 w-4/6 h-4/6 rounded-xl z-3">
-    
-        </div>
+        <div class="video w-4/6 h-4/6 rounded-xl z-3"></div>
     </section>
     
-    <section class="pictures w-screen min-h-[200vh] bg-white pt-[50vh] mt-[-50vh] pb-[5rem]">
+    <section class="pictures w-screen min-h-[200vh] bg-white pt-[50vh]  pb-[5rem]">
         <h1 class="text-black text-6xl font-bold text-center mb-[3rem]">Gallery</h1>
-
-        <div class="grid">
-            <div class="item" style="grid-area: box1"></div>
-            <div class="item" style="grid-area: box2"></div>
-            <div class="item" style="grid-area: box3"></div>
-            <div class="item" style="grid-area: box4"></div>
-            <div class="item" style="grid-area: box5"></div>
-        </div>
-        <div class="grid flipped">
-            <div class="item" style="grid-area: box1"></div>
-            <div class="item" style="grid-area: box2"></div>
-            <div class="item" style="grid-area: box3"></div>
-            <div class="item" style="grid-area: box4"></div>
-            <div class="item" style="grid-area: box5"></div>
-        </div>
-        <div class="grid">
-            <div class="item" style="grid-area: box1"></div>
-            <div class="item" style="grid-area: box2"></div>
-            <div class="item" style="grid-area: box3"></div>
-            <div class="item" style="grid-area: box4"></div>
-            <div class="item" style="grid-area: box5"></div>
-        </div>
-        <div class="grid flipped">
-            <div class="item" style="grid-area: box1"></div>
-            <div class="item" style="grid-area: box2"></div>
-            <div class="item" style="grid-area: box3"></div>
-            <div class="item" style="grid-area: box4"></div>
-            <div class="item" style="grid-area: box5"></div>
-        </div>
-
+        <BentoGallery/>
     </section>
+
     <div class="bg-white">
         <Section6/>
     </div>
@@ -51,49 +21,18 @@ import Section6 from "../layouts/Section6.astro";
 </Layout>
 
 <style>
-
-
-    .grid{
-        display: grid;
-        place-self: center;
-        width: auto;
-        height: 100%;
-        grid-template-columns:200px 200px 200px 200px; 
-        grid-template-rows: 200px 200px;
-        gap: 1rem;
-        grid-template-areas: 
-        "box1 box1 box2 box3"
-        "box1 box1 box4 box5";
-        padding: 0.5rem;
-    }
-
-    .flipped{
-        grid-template-areas: 
-        "box2 box3 box1 box1"
-        "box4 box5 box1 box1";
-    }
-
-    .item{
-        transition: .2s ease-in-out;
-        background-image: url('../thyda.jpeg');
-        border-radius: 2%;
-    }
-    .item:hover{
-        transform: scale(103%);
-    }
-
     .pictures{
-        clip-path: ellipse(120% 100% at bottom);
+        animation: slideIn 1s ease-in-out forwards;
     }
 
-    @media(max-width: 650px){
-        .grid{
-        grid-template-columns:90px 90px 90px 90px; 
-        grid-template-rows: 90px 90px;
+    @keyframes slideIn {
+        from{
+            margin-top: -30vh;
+            clip-path: ellipse(150% 100% at bottom);
         }
-
-        .pictures{
-        clip-path: ellipse(160% 100% at bottom);
+        to{
+            margin-top: -50vh;
+            clip-path: ellipse(200% 100% at bottom);
         }
     }
 

@@ -34,8 +34,19 @@ import Text from '../components/Text.astro';
 	#section2{
 		clip-path: ellipse(99% 100% at bottom);
 		z-index: 10;
-		margin-top: -150px; 
+        animation: slideUp 1s ease-in-out forwards;
 	}
+
+    @keyframes slideUp {
+        from{
+            margin-top: -400px;
+            clip-path: ellipse(40% 100% at bottom);
+        }
+        to{
+            margin-top: -500px;
+            clip-path: ellipse(100% 100% at bottom);
+        }
+    }
 
 	.sec-2 h1{
 		font-family: 'Boska-Variable';
@@ -69,5 +80,7 @@ import Text from '../components/Text.astro';
             margin: 0;
         }
     }
+
+
 
 </style>
