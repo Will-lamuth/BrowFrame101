@@ -7,7 +7,7 @@ function BentoGallery(){
     return(
         <div>
             {images.map((images, i) => (
-                <div key={i} className={images.direction}>
+                <div key={i} className={`${images.direction} animate`}>
                     <div className="image-box" style={{ gridArea: "box1",  backgroundImage: `url(${images.img1})` }}></div>
                     <div className="image-box" style={{ gridArea: "box2",  backgroundImage: `url(${images.img2})` }}></div>
                     <div className="image-box" style={{ gridArea: "box3",  backgroundImage: `url(${images.img3})` }}></div>

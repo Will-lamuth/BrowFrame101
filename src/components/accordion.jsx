@@ -18,7 +18,7 @@ function Accordion() {
         <div className="wrapper">
             <div className="accordion">
                 {services.map((item, i) => (
-                    <div key={i} className="item">
+                    <div key={i} className="item animate">
                         <div className="service" onClick={() => toggle(i)}>
                             <h2 className="service-title">{item.service}</h2>
                             <span className="service-direction">{selected === i ? '-' : '+'}</span>

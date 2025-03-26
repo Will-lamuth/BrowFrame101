@@ -1,11 +1,15 @@
-<div class="w-auto h-auto flex flex-col justify-center items-center p-5 md:p-15">
+<div class="w-auto h-auto flex flex-col justify-center items-center p-5 md:p-10">
+    <div>
+        <img src="../diamondicon.svg">
+    </div>
     <div>
         <slot name="first"/>
     </div>
+    <hr class="w-1/2 h-[1px] border-none bg-black mx-auto my-2">
     <div>
         <slot name="second"/>
     </div>
-    <div>
+    <div></div>
         <slot name="third"/>
     </div>
 </div>

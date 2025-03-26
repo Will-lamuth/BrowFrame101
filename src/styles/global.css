@@ -13,6 +13,7 @@ body{
     opacity: 1;
     animation: fadeIn 1s forwards;
     overflow-x: hidden;
+    background-color: #fffbeb;
 }
 @keyframes fadeIn {
     to {
@@ -65,10 +66,6 @@ body{
     transform: scale(103%);
 }
 
-.pictures{
-    clip-path: ellipse(200% 100% at bottom);
-}
-
 @media(max-width: 650px){
     .grid{
     grid-template-columns:90px 90px 90px 90px; 
@@ -79,6 +76,22 @@ body{
         clip-path: ellipse(160% 100% at bottom);
     }
 }
+
+
+.show-animate{
+    animation: reveal .8s ease-in-out forwards;
+}
+
+@keyframes reveal {
+    from{
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0%);
+      opacity: 100;
+    }
+  }
 
 
 

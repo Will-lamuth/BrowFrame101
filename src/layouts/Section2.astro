@@ -3,36 +3,44 @@
 import Text from '../components/Text.astro';
 ---
 
-<section id="section2" class="w-screen h-auto bg-[#fffbeb] py-10">   
+<div id="section2" class="w-screen h-auto bg-[#fffbeb] py-10">   
 
-    <div class="sec-2 w-auto h-auto flex justify-center">
+    <div class="sec-2 w-auto h-auto flex flex-col justify-center items-center">
         <h1 class="text-black">We Ensure</h1>
+        <hr class="bg-black w-[5%] h-[1px] border-none mx-auto">
     </div>
 
-    <div class="w-5/6 h-auto mx-auto flex flex-col md:flex-row justify-between" id="sec2-content">
-        <Text>
-            <p slot="first" id="section-title">Comfort</p>
-            <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
-            <p slot="third" id="section-price">$500 | 135 min</p>
-        </Text>
-        <Text>
-            <p slot="first" id="section-title">Quality</p>
-            <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
-            <p slot="third" id="section-price">$550 | 150 min</p>
-        </Text>
-        <Text>
-            <p slot="first" id="section-title">Professional</p>
-            <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
-            <p slot="third" id="section-price">$500 | 135 min</p>
-        </Text>
+    <div class=" w-5/6 h-auto mx-auto flex flex-col mt-4 md:flex-row justify-evenly items-center" id="sec2-content">
+        <div class="animate arch bg-[#907c4a34]">
+            <Text>
+                <p slot="first" id="section-title">Comfort</p>
+                <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+                <p slot="third" id="section-price">$500 | 135 min</p>
+            </Text>
+        </div>
+        
+        <div class="animate arch bg-[#907c4a65]">
+            <Text>
+                <p slot="first" id="section-title">Quality</p>
+                <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+                <p slot="third" id="section-price">$500 | 135 min</p>
+            </Text>
+        </div>
+
+        <div class="animate arch bg-[#907c4abb]">
+            <Text>
+                <p slot="first" id="section-title">Satisfaction</p>
+                <p slot="second" id="section-desc">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+                <p slot="third" id="section-price">$500 | 135 min</p>
+            </Text>
+        </div>
     </div>
-</section>
+</div>
 
 <style>
 
 
 	#section2{
-		clip-path: ellipse(99% 100% at bottom);
 		z-index: 10;
         animation: slideUp 1s ease-in-out forwards;
 	}
@@ -40,11 +48,11 @@ import Text from '../components/Text.astro';
     @keyframes slideUp {
         from{
             margin-top: -400px;
-            clip-path: ellipse(40% 100% at bottom);
+            /*clip-path: ellipse(40% 100% at bottom);*/
         }
         to{
             margin-top: -500px;
-            clip-path: ellipse(100% 100% at bottom);
+            /*clip-path: ellipse(100% 100% at bottom);*/
         }
     }
 
@@ -74,10 +82,30 @@ import Text from '../components/Text.astro';
 		font-size: 16px;
 	}
 
+    .arch{
+        border-radius: 100% 100% 0 0;
+        width: 23%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animate:nth-of-type(2){
+        opacity: 0;
+        animation-delay: .2s;
+    }
+
+    .animate:nth-of-type(3){
+        opacity: 0;
+        animation-delay: .5s;
+    }
+
     @media(max-width: 650px){
-        #section2{
-            clip-path: ellipse(200% 100% at bottom);
-            margin: 0;
+
+        .arch{
+            width: 65%;
+            margin-bottom: 10%;
         }
     }
 
