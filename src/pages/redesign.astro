@@ -1,0 +1,391 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Text from '../components/Text.astro';
+import Slideshow from '../components/slideshow';
+---
+
+<Layout>
+    <section id="one" class="w-screen h-[130vh] bg-[#E2CCAD] relative">
+        <div id="one-background" class="w-full h-full bg-white flex flex-col justify-start items-center">
+            <div id="one-h1" class="sm:w-full md:w-1/2 h-1/2 flex flex-col justify-center items-center text-center sm:gap-2 md:gap-5 mt-[20%] md:mt-[0%]">
+                <div>
+                    <h1>Fall in love with your</h1>
+                    <h1>brows again</h1>
+                </div>
+                
+                <div class="w-[60%] h-fit">
+                    <p class="font-[SpaceGrotesk-Variable] text-[20px]">Tailored eyebrow solutions from basic shading to cosmetic tattooing.</p>
+                </div>
+                <div class="w-full h-fit flex flex-row justify-center items-center gap-10 m-5">
+                    <button class="w-[140px] h-[50px] rounded-full bg-black text-white text-xl">Contact</button>
+                    <button class="w-[140px] h-[50px] rounded-full bg-white border-2 border-[#543A14] text-xl text-[#543A14]">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="one-image" class="animate w-screen h-fit flex justify-center absolute z-30 mt-[-50vh] md:mt-[-70vh]">
+        <div class="relative flex w-[85%] h-[70vh] justify-center">
+            <div id="img" class="absolute w-full h-full bg-amber-200 border-[1.5rem] border-white shadow-[0_0_20px_rgba(0,0,0,0.2)] z-30"></div>
+            <div class="absolute w-full h-full bg-[#EEEEEE] z-20 rotate-[7deg] shadow-[0_0_20px_rgba(0,0,0,0.2)]"></div>
+            <div class="absolute w-full h-full bg-[#F2F2F2] z-10 rotate-[-5deg] shadow-[0_0_20px_rgba(0,0,0,0.2)]"></div>
+        </div>
+        
+    </div>
+    
+    <section id="two" class="w-screen sm:h-auto md:h-[100vh] bg-[#EAD8C0] flex flex-col justify-start items-center relative ">
+            
+        <svg preserveAspectRatio="none" class="w-[100%] sm:h-[100%] md:h-[50%] mt-[-1px]" viewBox="0 0 1438 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-2.25 380.162C266.041 388.218 483.698 355.815 689.891 315.83C735.331 307.019 781.462 297.489 828.388 287.796C1016.44 248.95 1217.27 207.462 1437.75 198.93V0.898163H-2.25V380.162Z" fill="#E2CCAD"/>
+        </svg>
+            
+        <div class="w-full md:h-full flex flex-col justify-center items-center gap-12 sm:relative md:absolute">
+            <div id="two-h1" class="h-auto text-center flex flex-col items-center gap-5">
+                <div>
+                    <h1 class="animate">Transform Your Brows with Expert</h1>
+                    <h1 class="animate">Techniques</h1>
+                </div>
+                
+                <div class="w-2/3"><p class="animate font-[SpaceGrotesk-Variable] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur elit.</p></div>
+    
+                <svg width="203" height="11" viewBox="0 0 203 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.51378 4.27953L0.763672 0.102663V10.2064L9.51378 6.02955V4.27953ZM193.266 6.02955L202.016 10.2064V0.102663L193.266 4.27953V6.02955ZM8.63877 6.02955H194.141V4.27953H8.63877V6.02955Z" fill="black"/>
+                </svg>
+            </div>
+    
+            <div class="animate w-5/6 h-auto flex flex-col justify-center items-start md:flex-row">
+                <Text>
+                    <svg slot="icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="14.0068" y="0.82196" width="19.5672" height="19.5672" transform="rotate(44.8861 14.0068 0.82196)" fill="black"/>
+                    </svg>
+                    <p slot="first" class="section-title">Powerbrow: Soft and Natural Finish</p>
+                    <p slot="second" class="section-desc">Powderbrow is a machine shading technique that will give you a soft powdery everday makeup look.</p>
+                    <p slot="third" class="section-price">$500+ | 135 min</p>
+                </Text>
+                <Text>
+                    <svg slot="icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="14.0068" y="0.82196" width="19.5672" height="19.5672" transform="rotate(44.8861 14.0068 0.82196)" fill="black"/>
+                    </svg>
+                    <p slot="first" class="section-title">Microblading: Precise, Hair-like strokes</p>
+                    <p slot="second" class="section-desc">Technique that combines microblading hairstrokes with powderbrow shading to create a realistic look.</p>
+                    <p slot="third" class="section-price">$550+ | 150 min</p>
+                </Text>
+                <Text>
+                    <svg slot="icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="14.0068" y="0.82196" width="19.5672" height="19.5672" transform="rotate(44.8861 14.0068 0.82196)" fill="black"/>
+                    </svg>
+                    <p slot="first" class="section-title">Brow Tinting: Enhance your Natural Color</p>
+                    <p slot="second" class="section-desc">Semi-permanent technique that dyes brow hairs and stains the skin slightly for a fuller, more defined appearance.</p>
+                    <p slot="third" class="section-price">$500 | 135 min</p>
+                </Text>
+            </div>
+            
+            <button class="animate w-[140px] h-[50px] rounded-full bg-white border-2 border-[#543A14] text-xl text-[#543A14] box-border flex-none">Learn More</button>
+        </div>
+        
+    </section>
+
+    <section id="three" class="w-screen h-fit md:h-auto bg-[#FFFBEB] flex flex-col md:flex-row justify-center items-center gap-5 md:gap-0 relative text-center md:text-left py-16">
+         <div class="w-full md:w-[38%] h-full flex flex-col justify-center items-center md:items-start gap-10">
+            <h1 class="animate text-[60px] font-bold mr-0 md:mr-28 mb-[-30px] leading-18">Amazing Transformations</h1>
+            <svg width="409" height="11" viewBox="0 0 409 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M399.004 4.63391L408.072 0.305013V10.7765L399.004 6.44763V4.63391ZM9.88253 6.44763L0.813934 10.7765V0.305013L9.88253 4.63391V6.44763ZM399.911 6.44763H8.97567V4.63391H399.911V6.44763Z" fill="white"/>
+                <path d="M399.004 4.63391L408.072 0.305013V10.7765L399.004 6.44763V4.63391ZM9.88253 6.44763L0.813934 10.7765V0.305013L9.88253 4.63391V6.44763ZM399.911 6.44763H8.97567V4.63391H399.911V6.44763Z" fill="white"/>
+                <path d="M399.004 4.63391L408.072 0.305013V10.7765L399.004 6.44763V4.63391ZM9.88253 6.44763L0.813934 10.7765V0.305013L9.88253 4.63391V6.44763ZM399.911 6.44763H8.97567V4.63391H399.911V6.44763Z" fill="black"/>
+            </svg> 
+            <p class="animate text-[20px] font-[SpaceGrotesk-Variable]">Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <button class="animate w-[140px] h-[50px] rounded-full bg-black text-white border-2 text-xl">Learn More</button>
+         </div>           
+
+         <div class="w-full md:w-[38%] h-full flex justify-center items-center">
+            <div class="w-[450px] h-[450px] bg-white rotate-[6deg] flex justify-center items-center z-30 shadow-[0_0_20px_rgba(0,0,0,0.2)]">
+                <div id="brow-img" class="w-[350px] h-[350px] rotate-[-7deg] bg-gray-200 border-15 border-white z-30 shadow-[0_0_20px_rgba(0,0,0,0.2)]">
+
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <section id="four" class="w-screen sm:h-auto md:h-[100vh] bg-[#FFFBEB]">
+
+        <div id="four-background" class="w-full h-full bg-[#A28150] flex flex-col justify-start items-center relative overflow-hidden">
+            <svg preserveAspectRatio="none" class=" w-[100%] h-[55vh]" viewBox="0 0 1438 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-2.25 380.162C266.041 388.218 483.698 355.815 689.891 315.83C735.331 307.019 781.462 297.489 828.388 287.796C1016.44 248.95 1217.27 207.462 1437.75 198.93V0.898163H-2.25V380.162Z" fill="#BD9861"/>
+            </svg>
+    
+            <div class="sm:relative md:absolute w-full h-full flex flex-col justify-center items-center text-white gap-10 py-25 md:pt-10">
+                <div id="two-h1" class="h-auto text-center flex flex-col items-center gap-5">
+                    <div>
+                        <h1 class="animate">Discover the Art of Brows: Your</h1>
+                        <h1 class="animate">Journey Begins Here</h1>
+                    </div>
+                    
+                    <div class="animate w-2/3"><p class="font-[SpaceGrotesk-Variable] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur elit.</p></div>
+        
+                    <svg width="203" height="11" viewBox="0 0 203 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.51378 4.27953L0.763672 0.102663V10.2064L9.51378 6.02955V4.27953ZM193.266 6.02955L202.016 10.2064V0.102663L193.266 4.27953V6.02955ZM8.63877 6.02955H194.141V4.27953H8.63877V6.02955Z" fill="white"/>
+                    </svg>
+                </div>
+        
+                <div class="animate w-5/6 h-1/3 flex flex-col md:flex-row justify-between items-center">
+                    <Text>
+                        <svg slot="icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="14.0068" y="0.82196" width="19.5672" height="19.5672" transform="rotate(44.8861 14.0068 0.82196)" fill="#E8CC84"/>
+                        </svg>
+                        <p slot="first" class="section-title">Step 1: Quality</p>
+                        <p slot="second" class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p slot="third" class="section-price underline">Services &gt;</p>
+                    </Text>
+                    <Text>
+                        <svg slot="icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="14.0068" y="0.82196" width="19.5672" height="19.5672" transform="rotate(44.8861 14.0068 0.82196)" fill="#E8CC84"/>
+                        </svg>
+                        <p slot="first" class="section-title">Step 2: Comfort</p>
+                        <p slot="second" class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor</p>
+                        <p slot="third" class="section-price underline">Contact &gt;</p>
+                    </Text>
+                    <Text>
+                        <svg slot="icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="14.0068" y="0.82196" width="19.5672" height="19.5672" transform="rotate(44.8861 14.0068 0.82196)" fill="#E8CC84"/>
+                        </svg>
+                        <p slot="first" class="section-title">Step 3: Satisfaction</p>
+                        <p slot="second" class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p slot="third" class="section-price underline">Procedures &gt;</p>
+                    </Text>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section id="five" class="w-screen h-[90vh] bg-[#543A14] relative mt-[1px]">
+        <div id="five-background" class="absolute w-full h-full bg-[#FFFBEB] flex flex-col justify-conter items-center py-10 mt-[-1px] ">
+            <div id="five-h1" class="flex flex-col justify-center items-center">
+                <h1 class="animate text-[48px] font-[500]">Brow <span class="underline">Gallery&gt;</span></h1>
+                <p class="animate text-[20px] font-[400] font-[SpaceGrotesk-Variable]">Explore stunning brow transformations</p>
+            </div>
+    
+            <svg width="1156" height="12" viewBox="0 0 1156 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1146.71 5.29602L1155.78 0.967123V11.4386L1146.71 7.10974V5.29602ZM9.07458 7.10974L0.00598145 11.4386V0.967123L9.07458 5.29602V7.10974ZM1147.62 7.10974H8.16772V5.29602H1147.62V7.10974Z" fill="white"/>
+                <path d="M1146.71 5.29602L1155.78 0.967123V11.4386L1146.71 7.10974V5.29602ZM9.07458 7.10974L0.00598145 11.4386V0.967123L9.07458 5.29602V7.10974ZM1147.62 7.10974H8.16772V5.29602H1147.62V7.10974Z" fill="white"/>
+                <path d="M1146.71 5.29602L1155.78 0.967123V11.4386L1146.71 7.10974V5.29602ZM9.07458 7.10974L0.00598145 11.4386V0.967123L9.07458 5.29602V7.10974ZM1147.62 7.10974H8.16772V5.29602H1147.62V7.10974Z" fill="black"/>
+            </svg>
+                
+            <div class="w-5/6 h-2/3 bg-gray-200">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="six" class="sm:h-auto w-screen md:h-[80vh] bg-[#543A14] flex justify-center items-center text-white">
+        <div class="w-5/6 h-4/6 flex flex-col justify-center items-center gap-10">
+            <h1 class="animate text-[48px] font-bold text-center">Glowing Client Reviews</h1>
+
+            <svg width="408" height="11" viewBox="0 0 408 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M398.302 4.83118L407.371 0.502279V10.9738L398.302 6.6449V4.83118ZM9.18136 6.6449L0.112762 10.9738V0.502279L9.18136 4.83118V6.6449ZM399.209 6.6449H8.2745V4.83118H399.209V6.6449Z" fill="white"/>
+                <path d="M398.302 4.83118L407.371 0.502279V10.9738L398.302 6.6449V4.83118ZM9.18136 6.6449L0.112762 10.9738V0.502279L9.18136 4.83118V6.6449ZM399.209 6.6449H8.2745V4.83118H399.209V6.6449Z" fill="white"/>
+                <path d="M398.302 4.83118L407.371 0.502279V10.9738L398.302 6.6449V4.83118ZM9.18136 6.6449L0.112762 10.9738V0.502279L9.18136 4.83118V6.6449ZM399.209 6.6449H8.2745V4.83118H399.209V6.6449Z" fill="white"/>
+            </svg>
+                
+            <div class="animate w-full">
+                <Slideshow client:visible/>
+            </div>
+        </div>
+    </section>
+
+    <section id="seven" class="relative w-screen h-[50vh] flex justify-center items-center bg-[#fffbeb]">
+        <div class="relative w-full h-full text-white" id="trans-bg"></div>
+            <div class="absolute w-full h-full bg-black opacity-70 p-4">
+                <div class="rounded-lg bg-transparent border-3 border-white h-full w-full"></div>
+            </div>
+            <div class="absolute flex flex-col justify-center items-center gap-y-5">
+                <p class="animate text-[70px] text-white font-[400]">See Amazing Transformations</p>
+                <p class="animate text-white text-[20px] font-[SpaceGrotesk-Variable] font-[300]">Experience the art of brow perfection. Book your appointment and elevate your look</p>
+                <button class="animate w-[140px] h-[50px] rounded-full bg-transparent border-2 border-[white] text-xl text-[white]">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="eight" class="w-screen h-fit md:h-[auto] bg-[#FFFBEB] flex flex-col md:flex-row justify-center items-center gap-5 md:gap-16 relative text-center md:text-left py-[70px]">
+         <div class="w-full md:w-[38%] h-full flex justify-center items-center">
+            <div class="w-[450px] h-[450px] bg-white rotate-[6deg] flex justify-center items-center z-30 shadow-[0_0_20px_rgba(0,0,0,0.2)]">
+                <div id="thyda-img" class="w-[350px] h-[350px] rotate-[-8deg] bg-gray-200 border-15 border-white z-30 shadow-[0_0_20px_rgba(0,0,0,0.2)]"></div>
+            </div>
+         </div>
+         <div class="w-full md:w-[38%] h-full flex flex-col justify-center items-center md:items-start gap-10">
+            <div class="leading-24">
+                <h1 class="animate text-[40px] font-bold mr-0 md:mr-28">Hi, im</h1>
+                <h1 class="animate text-[125px] font-bold mr-0 md:mr-28">Thyda</h1>
+            </div>
+
+            <svg width="401" height="12" viewBox="0 0 401 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.72322 4.96166L0.0917969 0.364098V11.4855L9.72322 6.88795V4.96166ZM390.46 6.88795L400.092 11.4855V0.364098L390.46 4.96166V6.88795ZM8.76008 6.88795H391.424V4.96166H8.76008V6.88795Z" fill="black"/>
+            </svg>                
+
+            <p class="animate text-[20px] font-[SpaceGrotesk-Variable]">My name is <b>Thyda (tee-dah)</b>, Im a <b>brow specialist</b> and nail tech
+                based in Cambridge, Maryland. I specialize in doing <b>powderbrow </b>
+                and <b>ombre brow</b>, and love what i do and take pride in perfecting 
+                my craft. </p>
+            <button class="animate w-[140px] h-[50px] rounded-full bg-black text-white border-2 text-xl">Learn More</button>
+         </div>
+    </section>
+    
+    <section id="contact" class="w-screen h-[700px] md:h-[600px] flex justify-center items-center relative bg-transparent">
+        
+        <svg width="100%" height="100%" viewBox="0 0 1440 797" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.908203 4.67728C269.985 -15.2934 485.729 37.5883 694.704 105.275C736.888 118.939 780.751 134.124 826.209 149.861C1006.98 212.445 1213 283.766 1439.09 302.886V796.235H-0.908203V4.67728Z" fill="#D0A46C"/>
+        </svg>
+
+        <div class="absolute w-5/6 h-5/6 z-10 flex flex-row justify-between items-center gap-10 sm:p-0 md:p-10">
+            <div class="hidden w-1/2 h-full md:flex flex-col justify-between">
+                <h1 class="animate text-[60px] font-[500]">Book a Service.</h1>
+
+                <svg width="401" height="12" viewBox="0 0 401 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-[-4%]">
+                    <path d="M9.72322 4.96166L0.0917969 0.364098V11.4855L9.72322 6.88795V4.96166ZM390.46 6.88795L400.092 11.4855V0.364098L390.46 4.96166V6.88795ZM8.76008 6.88795H391.424V4.96166H8.76008V6.88795Z" fill="black"/>
+                </svg>    
+
+                <div>
+                    <p class="animate text-[20px] font-[400] font-[SpaceGrotesk-Variable]">The best way to book a service is to call or text me at:</p>
+                    <br>
+                    <div class="animate flex gap-x-3 items-center"><img src="../phone-icon.png" class="w-[30px] h-[30px]"><p class="text-[18px] font-[500] font-[SpaceGrotesk-Variable]">(443) 521-6191 or (443) 225-5675</p></div>
+                    <br>
+                    <div class="animate flex gap-x-3 items-center"><img src="../email-icon.png" class="w-[30px] h-[30px]"><p class="text-[18px] font-[500] font-[SpaceGrotesk-Variable]">thydalamuth@gmail.com</p></div>
+                    <br>
+                    <div class="animate flex gap-x-3 items-center"><img src="../pin-icon.png" class="w-[30px] h-[30px]"><p class="text-[18px] font-[500] font-[SpaceGrotesk-Variable]">12 washington street, Cambridge MD 21613</p></div>
+                </div>
+    
+                <button class="w-[140px] h-[50px] rounded-full bg-black text-white border-2 text-xl">Submit</button>
+            </div>
+            <div class="animate w-full md:w-1/2 h-full md:flex justify-center items-end">
+                <div class="sm:w-full md:w-[400px] h-[500px] flex flex-col bg-white p-2" id="contactForm">
+                    <div class="w-full h-1/8 flex items-center">
+                        <h1 id="form-header" class="text-[#273c2a]">Get in Touch!</h1>
+                    </div>
+                    <div class="w-full h-1/6 flex items-center">
+                        <label class="w-full h-[40px]">Full Name (Required)<input type="text" name="name" class="form-input h-full w-full"></label>
+                    </div>
+                    <div class="w-full h-1/6 flex items-center">
+                        <label class="w-full h-[40px]">Email (Required)<input type="text" name="email" class="form-input h-full w-full"></label>	
+                    </div>
+                    <div class="w-full h-2/6 flex items-center">
+                        <label class="w-full h-[150px]">Message (Required)<textarea name="message" class="form-input h-full w-full"></textarea></label>
+                    </div>
+                    <div class="w-full h-1/6 flex items-center">
+                        <label class="w-full h-[40px]">Phone (Required)<input type="text" name="phonenumber" class="form-input h-full w-full"></label>
+                    </div>
+                </div>
+                <button class="md:hidden w-45 h-12 btn rounded-full my-5 bg-green-900 border-white border-2 hover:scale-[106%] transition ease-in-out text-white shadow-lg text-[1.3rem] font-medium">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    
+</Layout>
+
+<style>
+    #one{
+        
+    }
+    #one-background{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 90%);
+        z-index: 20;
+    }
+    #one-image #img{
+        background-image: url("../shopImage.jpeg"); /* The image used *//* Used if the image is unavailable */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+    }
+    
+    #one-h1 h1{
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 120%;
+    }
+
+    #two-h1 h1{
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+    #brow-img{
+        background-image: url("../browpic.JPG"); /* The image used *//* Used if the image is unavailable */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+    }
+
+    #thyda-img{
+        background-image: url("../thyda.jpeg"); /* The image used *//* Used if the image is unavailable */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+    }
+
+    .section-title{
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .section-desc, .section-price{
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        font-family: 'SpaceGrotesk-Variable';
+    }
+
+    .section-price{
+        font-size: 20px;
+    }
+    
+    #four-background{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 90%);
+    }
+
+    #five-background{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 90%); 
+    }
+
+    #trans-bg{
+		background-image: url('../shopImage.jpeg');
+		background-repeat: none;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#contactForm{
+		box-shadow: 5px -5px 20px #5f54371f;
+		border-radius: 10px;
+	}
+
+	#contact-text{
+		font-size: 18px;
+	}
+
+	.form-input{
+		border-color: #BBBBBB;
+		border-width: 1px;
+		border-radius: 5px;
+		font-size: 18px;
+	}
+
+	textarea{
+		resize: none;
+		font-size: 18px;
+	}
+
+	label{
+		font-size: 14px;
+        color: rgba(0, 0, 0, 0.695);
+	}
+
+	#form-header{
+		font-weight: 700;
+		font-size: 40px;
+		padding: 0;
+        font-family: 'Boska-VariableItalic';
+	}
+
+</style>

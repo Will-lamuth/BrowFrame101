@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "../styles/boska.css";
+@import "../styles/space-grotesk.css";
 
 html{
     font-family: 'Boska-Variable'; 
@@ -59,7 +60,6 @@ body{
     to{
         background-color: rgb(172, 172, 172)
     }
-    
 }
 
 .image-box:hover{
